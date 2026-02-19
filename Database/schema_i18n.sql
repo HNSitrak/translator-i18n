@@ -45,3 +45,19 @@ CREATE TABLE status_translation (
     CONSTRAINT fk_status_translation_language FOREIGN KEY (language_id) REFERENCES language(id) ON DELETE CASCADE,
     CONSTRAINT uq_status_language UNIQUE(status_id, language_id)
 );
+
+INSERT INTO category (code) VALUES ('ACTIVE'), ('ARCHIVED');
+
+INSERT INTO status (code) VALUES ('PENDING'), ('VALIDATED');
+
+INSERT INTO category_translation (category_id, language_id, label) VALUES
+(1, 1, 'Actif'), (1, 2, 'Active'), (1, 3, 'Aktiv');
+
+INSERT INTO category_translation (category_id, language_id, label) VALUES
+(2, 1, 'Archivé'), (2, 2, 'Archived'), (2, 3, 'Archiviert');
+
+INSERT INTO status_translation (status_id, language_id, label) VALUES
+(1, 1, 'En attente'), (1, 2, 'Pending'), (1, 3, 'Ausstehend');
+
+INSERT INTO status_translation (status_id, language_id, label) VALUES
+(2, 1, 'Validé'), (2, 2, 'Validated'), (2, 3, 'Bestätigt');
