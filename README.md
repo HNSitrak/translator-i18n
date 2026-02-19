@@ -18,7 +18,7 @@ Prérequis et procédure d’installation
     mysql -u root -p
     CREATE DATABASE i18n CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
     USE i18n;
-    SOURCE Database/i18n.sql;
+    SOURCE Database/schema_i18n.sql;
 
 
     Configurer la connexion à la base
