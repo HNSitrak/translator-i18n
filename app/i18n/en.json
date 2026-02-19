@@ -1,9 +1,10 @@
 {
+    "hero.title": "Translation",
     "navbar.home": "Home",
     "navbar.about": "About",
     "navbar.contact": "Contact",
     "button.login": "Login",
-    "hero.title": "Wellcome",
+    "hero.welcome": "Welcome",
     "hero.subtitle": "Your multilingual translation app",
     "hero.cta": "Get Started",
     "login.email": "Email",
@@ -14,5 +15,10 @@
     "statuses.code": "Code",
     "language.fr": "French",
     "language.en": "English",
-    "language.de": "German"
+    "language.de": "German",
+    "button.start": "Submit",
+    "js": {
+        "enter_text": "Please enter a text",
+        "translated": "Translated text: "
+    }
 }

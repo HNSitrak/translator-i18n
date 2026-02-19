@@ -1,43 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+    color: #333;
 }
 
-nav {
-    background: #333;
-    color: white;
-    padding: 10px;
+.navbar {
+    background: #0f172a;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-nav ul {
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-links {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    gap: 25px;
+    color: #cbd5e1;
 }
 
-nav ul li {
-    margin-right: 20px;
-}
-
-nav button {
-    padding: 5px 10px;
+.nav-links li {
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-links li:hover {
+    color: #ffffff;
+}
+
+.lang-switch a {
+    color: #38bdf8;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .hero {
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 100px 20px;
-    background: #f0f0f0;
+    color: white;
+    padding: 50px 20px;
 }
 
-#loginPopup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.translator-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.translator-box input {
+    padding: 12px;
+    width: 320px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.translator-box button {
+    padding: 12px 20px;
+    background: #facc15;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.translator-box button:hover {
+    background: #eab308;
+}
+
+.hero-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.hero-cards .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.hero-cards .card {
+    background: rgba(255,255,255,0.15);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+.hero-cards .card:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.25);
+}
+
+.hero-cards .card h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.hero-cards .card span {
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.main-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+}
+
+.card-section {
+    margin-bottom: 60px;
+}
+
+.card-section h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
     background: white;
-    padding: 30px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    width: 350px;
+    text-align: center;
+}
+
+.popup-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-content input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 6px;
     border: 1px solid #ccc;
+}
+
+.popup-content button {
+    padding: 10px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.custom-alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    z-index: 9999;
+    opacity: 0.95;
+}
+
+.custom-alert.error {
+    background: #dc2626;
+}
+
+.custom-alert.success {
+    background: #16a34a;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    .translator-box input {
+        width: 200px;
+    }
+    .hero-cards .card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
 }

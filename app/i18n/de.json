@@ -1,9 +1,10 @@
 {
+    "hero.title": "Übersetzung",
     "navbar.home": "Startseite",
     "navbar.about": "Über",
     "navbar.contact": "Kontakt",
     "button.login": "Anmelden",
-    "hero.title": "Willkommen",
+    "hero.welcome": "Willkommen",
     "hero.subtitle": "Ihre mehrsprachige Übersetzungs-App",
     "hero.cta": "Loslegen",
     "login.email": "E-Mail",
@@ -14,5 +15,10 @@
     "statuses.code": "Code",
     "language.fr": "Französisch",
     "language.en": "Englisch",
-    "language.de": "Deutsch"
+    "language.de": "Deutsch",
+    "button.start": "Absenden",
+    "js": {
+        "enter_text": "Bitte geben Sie einen Text ein",
+        "translated": "Übersetzter Text: "
+    }
 }

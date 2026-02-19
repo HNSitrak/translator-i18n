@@ -1,10 +1,17 @@
-$(document).ready(function() {
-    $('#loginBtn').on('click', function() {
-        $('#loginPopup').fadeIn();
-    });
+document.addEventListener("DOMContentLoaded", function () {
+    const loginBtn = document.getElementById("loginBtn");
+    const loginPopup = document.getElementById("loginPopup");
 
-    $('#loginForm').on('submit', function(e) {
-        e.preventDefault();
-        $('#loginPopup').fadeOut();
-    });
+    if (loginBtn && loginPopup) {
+        loginBtn.addEventListener("click", function () {
+            loginPopup.style.display = "flex";
+        });
+
+        loginPopup.addEventListener("click", function(e) {
+            if (e.target === loginPopup) {
+                loginPopup.style.display = "none";
+            }
+        });
+    }
+
 });
