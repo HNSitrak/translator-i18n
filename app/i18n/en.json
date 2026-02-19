@@ -11,5 +11,8 @@
     "categories.heading": "Categories",
     "categories.code": "Code",
     "statuses.heading": "Statuses",
-    "statuses.code": "Code"
+    "statuses.code": "Code",
+    "language.fr": "French",
+    "language.en": "English",
+    "language.de": "German"
 }

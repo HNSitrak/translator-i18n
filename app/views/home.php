@@ -17,7 +17,18 @@ $translator = new JsonTranslationService($lang);
             <li><?= $translator->trans('navbar.home') ?></li>
             <li><?= $translator->trans('navbar.about') ?></li>
             <li><?= $translator->trans('navbar.contact') ?></li>
-            <li><button id="loginBtn"><?= $translator->trans('button.login') ?></button></li>
+            <li>
+                <a href="?lang=fr"><?= $translator->trans('language.fr') ?></a>
+                |
+                <a href="?lang=en"><?= $translator->trans('language.en') ?></a>
+                |
+                <a href="?lang=de"><?= $translator->trans('language.de') ?></a>
+            </li>
+            <li>
+                <button id="loginBtn">
+                    <?= $translator->trans('button.login') ?>
+                </button>
+            </li>
         </ul>
     </nav>
 
