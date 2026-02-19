@@ -7,5 +7,9 @@
     "hero.subtitle": "Your multilingual translation app",
     "hero.cta": "Get Started",
     "login.email": "Email",
-    "login.password": "Password"
+    "login.password": "Password",
+    "categories.heading": "Categories",
+    "categories.code": "Code",
+    "statuses.heading": "Statuses",
+    "statuses.code": "Code"
 }
