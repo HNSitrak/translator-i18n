@@ -1,3 +1,11 @@
 {
-    "hero.title": "Willkommen"
+    "navbar.home": "Startseite",
+    "navbar.about": "Über",
+    "navbar.contact": "Kontakt",
+    "button.login": "Anmelden",
+    "hero.title": "Willkommen",
+    "hero.subtitle": "Ihre mehrsprachige Übersetzungs-App",
+    "hero.cta": "Loslegen",
+    "login.email": "E-Mail",
+    "login.password": "Passwort"
 }

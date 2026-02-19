@@ -1,3 +1,11 @@
 {
-    "hero.title": "Bienvenue"
+    "navbar.home": "Accueil",
+    "navbar.about": "À propos",
+    "navbar.contact": "Contact",
+    "button.login": "Connexion",
+    "hero.title": "Bienvenue",
+    "hero.subtitle": "Votre application de traduction multilingue",
+    "hero.cta": "Commencer",
+    "login.email": "Email",
+    "login.password": "Mot de passe"
 }

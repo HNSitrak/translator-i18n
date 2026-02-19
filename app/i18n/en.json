@@ -1,3 +1,11 @@
 {
-    "hero.title": "Wellcome"
+    "navbar.home": "Home",
+    "navbar.about": "About",
+    "navbar.contact": "Contact",
+    "button.login": "Login",
+    "hero.title": "Wellcome",
+    "hero.subtitle": "Your multilingual translation app",
+    "hero.cta": "Get Started",
+    "login.email": "Email",
+    "login.password": "Password"
 }
